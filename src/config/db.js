@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const URI = process.env.DB_USER
+
 const connectDB = () => {
     mongoose.connect(URI)
         .then(() =>{
