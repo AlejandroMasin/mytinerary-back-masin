@@ -6,7 +6,6 @@ const City = require("../models/City")
 
 const cities = require("../utils/cities")
 
-
 // Usando insertMany para insertar los documentos
 City.insertMany(cities)
   .then(() => {

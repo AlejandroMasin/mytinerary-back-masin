@@ -1,6 +1,5 @@
 const City = require("../models/City")
 
-
 const getCities = async (req, res) => {
 
     try {
@@ -66,7 +65,6 @@ const updateCity = async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 }
-
 
 const deleteCity = async (req, res) => {
 
