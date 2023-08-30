@@ -6,7 +6,7 @@ const itineraries = [
         duracion: "5 hours.",
         likes: ["JohnDoe1234", "JaneDoe5678", "Pepito1234"],
         hashtags: ["#Travel", "#Adventure", "#Photography"],
-        _ciudad: ['64e3e153f731989e96be231f']
+        _ciudad: "64e3e153f731989e96be231f"
     },
 ]
 

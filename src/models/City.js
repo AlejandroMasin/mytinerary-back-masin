@@ -17,7 +17,9 @@ const schemaCity = new Schema({
         type: Types.ObjectId,
         ref: 'Itinerary',
     }]
-}, { timestamps: true });
+},
+//  { timestamps: true }
+ );
 
 const City = model("City", schemaCity);
 
