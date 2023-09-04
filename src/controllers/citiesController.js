@@ -3,7 +3,7 @@ const City = require("../models/City")
 const getCities = async (req, res) => {
 
     try {
-        let Cities = await City.find()
+        let Cities = await City.find().populate('itineraries')
 
         res.json(
             Cities
@@ -19,7 +19,7 @@ const getCity = async (req, res) => {
     try {
         const { id } = req.params
 
-        let ciudadEncontrada = await City.findById(id)
+        let ciudadEncontrada = await City.findById(id).populate('itineraries')
 
         res.status(200).json(ciudadEncontrada)
 

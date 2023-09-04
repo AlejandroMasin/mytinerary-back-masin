@@ -12,11 +12,11 @@ router.put("/city/:id", updateCity)
 router.delete("/cities", deleteCity)
 
 router.get("/itineraries", getItineraries)
-router.get('/itinerariesbycity', getItineraryByCity);
 router.get("/itinerary/:id", getItinerary)
 router.post("/itineraries", addItinerary)
 router.put("/itinerary/:id", updateItinerary)
 router.delete("/itinerary", deleteItinerary)
 
+router.get('/itinerariesbycity/:id', getItineraryByCity);
 
 module.exports = router

@@ -2,6 +2,12 @@ const { Schema, model, Types } = require('mongoose');
 
 const schemaItinerary = new Schema({
 
+    user: {
+        type: String,
+    },
+    image: {
+        type: String,
+    },
     nombre: {
         type: String,
         required: true,
@@ -24,6 +30,12 @@ const schemaItinerary = new Schema({
     hashtags: [{
         type: String,
         required: true,
+    }],
+    activities: [{
+        type: String,
+    }],
+    comments: [{
+        type: String,
     }],
     _ciudad: {
         type: Types.ObjectId, 

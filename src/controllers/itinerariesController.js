@@ -32,7 +32,7 @@ const getItinerary = async (req, res) => {
 
 const getItineraryByCity = async (req, res) => {
     try {
-        const { id } = req.query;
+        const { id } = req.params;
 
         // Verificar si se proporcionó un ID válido
         if (!id) {
@@ -42,7 +42,7 @@ const getItineraryByCity = async (req, res) => {
         // Utilizar el ID proporcionado para filtrar los itinerarios por ciudad
         let itinerariesEncontrados = await Itinerary.find({ _ciudad: id });
 
-        res.status(200).json({itinerariesEncontrados});
+        res.status(200).json({ itinerariesEncontrados });
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
@@ -59,6 +59,8 @@ const addItinerary = async (req, res) => {
 
         let payload = req.body
 
+        payload._ciudad = cityFound._id;
+
         let newItinerary = await Itinerary.create(payload)
 
         // let newItinerary = await Itinerary.create({
@@ -73,10 +75,10 @@ const addItinerary = async (req, res) => {
 
         await cityFound.updateOne({ itineraries: [...cityFound.itineraries, newItinerary] })
 
-        let cityFoundUpdated = await City.findById(id)
+        let cityFoundUpdated = await City.findById(id).populate('itineraries')
 
         res.status(200).json({
-            message: "City has been updated",
+            message: "Itinerary has been added",
             city: cityFoundUpdated
         })
 
