@@ -6,7 +6,6 @@ const Itinerary = require("../models/Itinerary")
 
 const itineraries = require("../utils/itineraries")
 
-// Usando insertMany para insertar los documentos
 Itinerary.insertMany(itineraries)
   .then(() => {
     console.log('Itinerarios insertados con éxito');
