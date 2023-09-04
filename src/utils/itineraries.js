@@ -79,9 +79,88 @@ const itineraries = [
         "likes": ["RiverCruiseEnthusiast", "NileExplorer", "CulturalCruiser"],
         "hashtags": ["#RiverCruise", "#Exploration", "#NileAdventures"],
         "_ciudad": "64f22b93710c1c3b2e8a27d6"
+    },
+    {
+        "nombre": "New York City Landmarks",
+        "descripcion": "A comprehensive itinerary covering the iconic landmarks of New York City, including visits to the Statue of Liberty, Central Park, Times Square, and the Empire State Building.",
+        "precio": 4,
+        "duracion": "3 days",
+        "likes": ["BigAppleExplorer", "LandmarkLover", "NYCEnthusiast"],
+        "hashtags": ["#NYC", "#Landmarks", "#Sightseeing"],
+        "_ciudad": "64f22b93710c1c3b2e8a27e0"
+    },
+    {
+        "nombre": "Foodie Adventure in NYC",
+        "descripcion": "A culinary journey through New York City's diverse food scene, exploring food trucks, ethnic neighborhoods, and renowned restaurants to satisfy your taste buds.",
+        "precio": 3,
+        "duracion": "4 hours",
+        "likes": ["FoodieNYC", "GourmetExplorer", "TastyEater"],
+        "hashtags": ["#Foodie", "#Cuisine", "#NYCEats"],
+        "_ciudad": "64f22b93710c1c3b2e8a27e0"
+    },
+    {
+        "nombre": "Art and Culture in The Big Apple",
+        "descripcion": "An exploration of New York City's vibrant art and cultural scene, including visits to the MET Museum, Broadway shows, and contemporary art galleries.",
+        "precio": 5,
+        "duracion": "5 hours",
+        "likes": ["ArtLover", "CultureExplorer", "NYCArtEnthusiast"],
+        "hashtags": ["#Art", "#Culture", "#NYCArts"],
+        "_ciudad": "64f22b93710c1c3b2e8a27e0"
+    },
+    {
+        "nombre": "Historical London Exploration",
+        "descripcion": "A five-day itinerary in London that immerses you in the city's rich history, featuring visits to the Tower of London, Buckingham Palace, Westminster Abbey, and the British Museum.",
+        "precio": 4,
+        "duracion": "5 hours",
+        "likes": ["HistoryBuff", "CultureExplorer", "LondonEnthusiast"],
+        "hashtags": ["#History", "#Culture", "#London"],
+        "_ciudad": "64f22b93710c1c3b2e8a27e0"
+    },
+    {
+        "nombre": "London's Culinary Delights",
+        "descripcion": "A food lover's dream itinerary in London, exploring the city's diverse food markets, traditional English pubs, and fine dining restaurants to savor the flavors of the UK.",
+        "precio": 3,
+        "duracion": "4 hours",
+        "likes": ["FoodieLondon", "GourmetExplorer", "TastyEaterUK"],
+        "hashtags": ["#Foodie", "#Cuisine", "#LondonEats"],
+        "_ciudad": "64f22b93710c1c3b2e8a27e0"
+    },
+    {
+        "nombre": "Art and Culture in London",
+        "descripcion": "An exploration of London's vibrant art and cultural scene, including visits to the Tate Modern, West End theaters, and walking tours of street art in Shoreditch.",
+        "precio": 5,
+        "duracion": "3 hours",
+        "likes": ["ArtLover", "CultureExplorer", "LondonArtEnthusiast"],
+        "hashtags": ["#Art", "#Culture", "#LondonArts"],
+        "_ciudad": "64f22b93710c1c3b2e8a27e0"
+    },
+    {
+        "nombre": "Playas y Relajación en Río",
+        "descripcion": "Un itinerario de cuatro días en Río de Janeiro que te llevará a las famosas playas de Copacabana e Ipanema, así como a experiencias de relajación en spas y bares de playa.",
+        "precio": 3,
+        "duracion": "4 hours",
+        "likes": ["PlayaFan", "RelaxEnthusiast", "RioLover"],
+        "hashtags": ["#Playa", "#Relajación", "#Río"],
+        "_ciudad": "64f22b93710c1c3b2e8a27e0"
+    },
+    {
+        "nombre": "Aventuras en la Selva de Tijuca",
+        "descripcion": "Un emocionante itinerario de tres días que te llevará a explorar la selva de Tijuca, hacer senderismo en cascadas, y disfrutar de actividades al aire libre en el corazón de Río de Janeiro.",
+        "precio": 4,
+        "duracion": "3 hours",
+        "likes": ["AventureroRío", "NaturalezaExplorador", "SenderistaBrasil"],
+        "hashtags": ["#Aventura", "#Naturaleza", "#RíoDeJaneiro"],
+        "_ciudad": "64f22b93710c1c3b2e8a27e0"
+    },
+    {
+        "nombre": "Cultura y Samba en Río",
+        "descripcion": "Un itinerario de cinco días que te sumergirá en la rica cultura de Río de Janeiro, incluyendo visitas a museos, espectáculos de samba, y recorridos por barrios históricos.",
+        "precio": 5,
+        "duracion": "5 hours",
+        "likes": ["CulturaRío", "AmanteDelSamba", "HistoriaBrasil"],
+        "hashtags": ["#Cultura", "#Samba", "#RíoCultural"],
+        "_ciudad": "64f22b93710c1c3b2e8a27e0"
     }
-    
-    
 
 ];
 

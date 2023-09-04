@@ -1,7 +1,5 @@
 require('dotenv').config();
 
-// const cities = require("./utils/cities")
-
 const express = require("express")
 
 const router = require("./router/router")

@@ -39,7 +39,6 @@ const getItineraryByCity = async (req, res) => {
             return res.status(400).json({ message: "ID de ciudad no proporcionado en la consulta." });
         }
 
-        // Utilizar el ID proporcionado para filtrar los itinerarios por ciudad
         let itinerariesEncontrados = await Itinerary.find({ _ciudad: id });
 
         res.status(200).json({ itinerariesEncontrados });
@@ -47,8 +46,6 @@ const getItineraryByCity = async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 }
-
-
 
 const addItinerary = async (req, res) => {
 
