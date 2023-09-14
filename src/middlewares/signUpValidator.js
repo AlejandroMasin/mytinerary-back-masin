@@ -17,7 +17,7 @@ const signUpValidator = (req, res, next) => {
         image: Joi.string().required().uri(),
         country: Joi.string().min(3).max(20),
         email: Joi.string().required().email(),
-        password: Joi.string().min(3).max(20).pattern(new RegExp('^[a-zA-Z0-9]{3,30}$')),
+        password: Joi.string().min(3).max(30).pattern(new RegExp('^[a-zA-Z0-9]{3,30}$')),
         is_online: Joi.boolean()
     })
 
